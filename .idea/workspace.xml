@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a26a7c5f-4335-445a-8961-664c13952618" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/laravel-WheaterApp-api/resources/views/home/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel-WheaterApp-api/public/css/owlcarousel/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel-WheaterApp-api/public/css/owlcarousel/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel-WheaterApp-api/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel-WheaterApp-api/public/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel-WheaterApp-api/public/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel-WheaterApp-api/resources/views/resultado.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WheaterApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WheaterApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel-WheaterApp-api/app/Http/Controllers/WeatherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel-WheaterApp-api/app/Http/Controllers/WeatherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel-WheaterApp-api/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel-WheaterApp-api/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel-WheaterApp-api/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/laravel-WheaterApp-api/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel-WheaterApp-api/resources/views/home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel-WheaterApp-api/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel-WheaterApp-api/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel-WheaterApp-api/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +146,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2Haiu0g4LX1hqDlrzXsAKE77PpB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -143,7 +156,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/www/WheaterApp",
+    "last_opened_file_path": "C:/xampp/htdocs/www/WheaterApp/laravel-WheaterApp-api/public/js",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -154,10 +167,18 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\www\WheaterApp\laravel-WheaterApp-api\public\js" />
+      <recent name="C:\xampp\htdocs\www\WheaterApp\laravel-WheaterApp-api\public\css\owlcarousel" />
+      <recent name="C:\xampp\htdocs\www\WheaterApp\laravel-WheaterApp-api\resources\views" />
+      <recent name="C:\xampp\htdocs\www\WheaterApp\laravel-WheaterApp-api\public\css" />
+      <recent name="C:\xampp\htdocs\www\WheaterApp\laravel-WheaterApp-api\public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\www\WheaterApp\laravel-WheaterApp-api\resources\css" />
+      <recent name="C:\xampp\htdocs\www\WheaterApp\laravel-WheaterApp-api\resources\views" />
       <recent name="C:\xampp\htdocs\www\WheaterApp\laravel-WheaterApp-api\public" />
       <recent name="C:\xampp\htdocs\www\WheaterApp\laravel-WheaterApp-api\resources\views\home" />
-      <recent name="C:\xampp\htdocs\www\WheaterApp\laravel-WheaterApp-api\resources\views" />
       <recent name="C:\xampp\htdocs\www\WheaterApp\laravel-WheaterApp-api\resources" />
     </key>
   </component>
@@ -186,7 +207,10 @@
       <updated>1668529813598</updated>
       <workItem from="1668529815005" duration="4353000" />
       <workItem from="1668609129783" duration="323000" />
-      <workItem from="1668703685668" duration="5080000" />
+      <workItem from="1668703685668" duration="15423000" />
+      <workItem from="1668780411315" duration="4049000" />
+      <workItem from="1668797791148" duration="1385000" />
+      <workItem from="1668955334901" duration="5047000" />
     </task>
     <servers />
   </component>

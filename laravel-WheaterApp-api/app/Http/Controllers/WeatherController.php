@@ -7,7 +7,11 @@ use Illuminate\Http\Request;
 class WeatherController extends Controller
 {
         public function index(){
-            return view('home/home');
+            return view('/home');
+        }
+
+        public function resultado(){
+            return view('/resultado');
         }
 }
 

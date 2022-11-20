@@ -1,3 +1,7 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -6,41 +10,267 @@
     box-sizing: border-box;
 }
 
+
+.items-center-h{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .background{
     width: 100%;
     height: 100vh;
     background-image: url("../images/fondo.png");
+
+    /*Centrar la  posicion de imagen*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
+/*VISTA HOME*/
+
+img{
+    margin-top: 2%;
+    width: 30%;
+
+}
+.frase{
+    width: 90%;
+    padding-left:10%;
+    margin-top: 15%;
+    margin-bottom: 3%;
+}
 p{
+    text-align: center;
     color: #FFFFFF;
+    font-family: 'Mulish', sans-serif;
 }
 
 .inputs input{
-    width: 100%;
+    width: 80%;
     padding: 2%;
-    border-radius: 4px;
-    color: #FFFFFF;
+    /*fondo del input transparente*/
     background-color:rgba(0, 0, 0, 0);
+    /*borde*/
+    border-radius: 0.25rem;
+    border: #FFFFFF 1px solid;
+}
+.inputs input:focus{
+    border-radius: 0.25rem;
+    border: #FFFFFF 1px solid;
+}
+.inputs input::placeholder{
+    color: #FFFFFF;
 }
 
-.submit input{
-    width: 100%;
+.submitBox{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 80%;
     background-color: #00BDE0;
-    padding: 2%;
+    padding: 1%;
     color: white;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     border: 0;
+    font-size: 1.25rem;
+    box-shadow: 0px 0px 50px -10px #1f1f1f;
 
 }
-div{
-    padding: 5%;
+
+
+.son{
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: 0;
+    color: #FFFFFF;
+
 }
+.son:hover{
+    cursor: pointer;
+}
+
+.son2{
+    z-index: 2;
+    margin-left: auto;
+
+}
+/*RESPONSIVE VISTA HOME*/
+
+@media (max-device-width: 480px){
+  img{
+      margin-top: 7%;
+      width: 70%;
+  }
+
+    .submitBox{
+
+        padding: 3%;
+        width: 100%;
+    }
+    .son{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .inputs input{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .frase{
+        margin-top: 25%;
+    }
+    .footter{
+        margin-top: auto;
+        margin-bottom: 5%;
+    }
+    p{
+        font-weight: bold;
+    }
+}
+
+
+
+
+/*VISTA RESULTADO*/
+.boxes{
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    height:50vh;
+    background-color: #306C77;
+    opacity: 70%;
+}
+.box1{
+    margin-left: 4%;
+    width: 60%;
+
+
+}
+
+.box2{
+    margin-left: 2%;
+    width: 25%;
+
+}
+
+
+.direction-row{
+    display: flex;
+    flex-direction: row;
+}
+.header{
+
+}
+.header div{
+    width: 50%;
+    display: flex;
+    justify-content:center ;
+}
+
+
+.ahora{
+    width: 23%;
+    height: 20vh;
+    border-right: #FFFFFF 1px solid;
+}
+.prox, .dias{
+    height: 20vh;
+
+
+}
+
+.info-box{
+    display: flex;
+    color: #FFFFFF;
+}
+.icon-box{
+    height:1rem;
+    font-size: 4em;
+}
+.temp2{
+    font-size: 2rem;
+}
+.miniboxes{
+    position: relative;
+    top: -15%;
+    display: flex;
+   flex-direction: row;
+}
+
+.info-minibox2{
+    height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    color: #FFFFFF;
+    width: 25%;
+}
+.prox{
+    width: 40%;
+    border-right: #FFFFFF 1px solid;
+}
+
+
+
+.info-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    position: relative;
+    top: -15%;
+}
+.info-minibox{
+    height: 14vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    color: #FFFFFF;
+    border-right: #b3b3b3 1px solid;
+    width: 25%;
+}
+.icon{
+    color: #FFFFFF;
+    height:1rem;
+    font-size: 1.5em;
+}
+
+.h5{
+    font-size: 0.85rem;
+    padding-bottom: 40%;
+}
+
+.lluvia{
+    font-size: 0.65rem;
+    padding-top: 30%;
+}
+.temp{
+
+}
+
+.dias{
+    width: 40%;
+}
+
+
+
+div{
+    padding: 2%;
+}
+
 
