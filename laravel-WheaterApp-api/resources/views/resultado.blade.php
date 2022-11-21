@@ -123,7 +123,122 @@
 
 
         </div>
-        <div class="box box2"></div>
+        <div class="box box2">
+            <div class="top-header">
+                <h5>Top 5 de las zonas más frías según tus búsquedas</h5>
+            </div>
+
+            <div class="top-minibox">
+                <p class="number">1.</p>
+                <p class="top-temp">-3º</p>
+                <div class="top-infobox">
+                    <div class="cp">
+                        <p class="cp-tittle">CP: </p>
+                        <p class="cp-info">08034</p>
+                    </div>
+                    <div class="ciudad">
+                        <p class="cd-tittle">Ciudad: </p>
+                        <p class="cd-info">Barcelona</p>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+            <hr>
+            <div class="top-minibox">
+                <p class="number">1.</p>
+                <p class="top-temp">-3º</p>
+                <div class="top-infobox">
+                    <div class="cp">
+                        <p class="cp-tittle">CP: </p>
+                        <p class="cp-info">08034</p>
+                    </div>
+                    <div class="ciudad">
+                        <p class="cd-tittle">Ciudad: </p>
+                        <p class="cd-info">Barcelona</p>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+            <hr> <div class="top-minibox">
+                <p class="number">1.</p>
+                <p class="top-temp">-3º</p>
+                <div class="top-infobox">
+                    <div class="cp">
+                        <p class="cp-tittle">CP: </p>
+                        <p class="cp-info">08034</p>
+                    </div>
+                    <div class="ciudad">
+                        <p class="cd-tittle">Ciudad: </p>
+                        <p class="cd-info">Barcelona</p>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+            <hr>
+            <div class="top-minibox">
+                <p class="number">1.</p>
+                <p class="top-temp">-3º</p>
+                <div class="top-infobox">
+                    <div class="cp">
+                        <p class="cp-tittle">CP: </p>
+                        <p class="cp-info">08034</p>
+                    </div>
+                    <div class="ciudad">
+                        <p class="cd-tittle">Ciudad: </p>
+                        <p class="cd-info">Barcelona</p>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+            <hr>
+            <div class="top-minibox">
+                <p class="number">1.</p>
+                <p class="top-temp">-3º</p>
+                <div class="top-infobox">
+                    <div class="cp">
+                        <p class="cp-tittle">CP: </p>
+                        <p class="cp-info">08034</p>
+                    </div>
+                    <div class="ciudad">
+                        <p class="cd-tittle">Ciudad: </p>
+                        <p class="cd-info">Barcelona</p>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+            <hr>
+
+        </div>
     </div>
 
 </div>
