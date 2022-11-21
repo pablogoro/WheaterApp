@@ -19,7 +19,7 @@
         <div class="frase items-center-h">
             <p>Enteráte del tiempo en la zona exacta que te interesa buscando por código postal</p>
         </div>
-        <form action="{{ route('resultado') }}" >
+        <form action="{{ route('resultado') }}" method="HEAD" >
 
         <div class="inputs items-center-h ">
             <input type="text" name="cp" placeholder="Introduce el código postal">

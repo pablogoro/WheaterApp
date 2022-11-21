@@ -43,11 +43,11 @@
                     <div class="info-box">
                         <div class="icon-box">
 
-                            <i class="fa-solid fa-snowflake"></i>
+                            <img src="{{$icon}}">
                         </div>
                         <div class="lluvia-box">
-                            <p >Nieve</p>
-                            <p class="temp2">-3º</p>
+                            <p >{{mb_convert_case($tiempo,MB_CASE_TITLE)}}</p>
+                            <p class="temp2">{{round($temp)}}º</p>
                         </div>
 
                     </div>

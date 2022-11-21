@@ -247,10 +247,10 @@ p{
     border-right: #b3b3b3 1px solid;
     width: 25%;
 }
-.icon{
+.icon-box img{
     color: #FFFFFF;
-    height:1rem;
-    font-size: 1.5em;
+    height:1em;
+    width: 1em;
 }
 
 .h5{
