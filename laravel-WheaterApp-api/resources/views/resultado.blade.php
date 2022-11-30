@@ -30,23 +30,28 @@
     <div class="boxes">
         <div class="box box1">
             <div class="direction-row header">
-                <div>
-                    Codigo postal:
-                    Ciudad:
+                <div class="info-ciudad">
+                    <div class="codigo-postal">
+                        <h5>Codigo postal:</h5>  <p> {{$_REQUEST['cp']}}</p>
+                    </div>
+                    <div class="nombre-ciudad">
+                        <h5>Ciudad:</h5> <p>{{$ciudad}}</p>
+                    </div>
                 </div>
-                <div>Buscar otra zona</div>
+                <div class="buscar">  <a href="{{ route('home') }}"><i class="fa-sharp fa-solid fa-magnifying-glass"></i>Buscar otra zona</a></div>
+                <div class="buscar-responsive">  <a href="{{ route('home') }}"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></div>
             </div>
             <div class="direction-row info">
                 <div class="ahora">
-                    <div class="info-header">Ahora</div>
+                    <div class="info-header">Hoy</div>
 
                     <div class="info-box">
                         <div class="icon-box">
 
-                            <img src="{{$icon}}">
-                        </div>
+                           <img src="{{$icon}}">
+             </div>
                         <div class="lluvia-box">
-                            <p >{{mb_convert_case($tiempo,MB_CASE_TITLE)}}</p>
+                      <p >{{mb_convert_case($weather,MB_CASE_TITLE)}}</p>
                             <p class="temp2">{{round($temp)}}º</p>
                         </div>
 
@@ -56,69 +61,66 @@
                     <div class="info-header">Próximas horas</div>
                     <div class="miniboxes">
 
+                    @foreach($resultadoHoras['tiempos'] as $key => $name)
                     <div class="info-minibox">
-                        <p class="h5">Ahora</p>
-                        <i class="fa-solid fa-snowflake icon"></i>
-                        <p class="lluvia">Nieve</p>
-                        <p>-3</p>
+
+                    <p class="h5">{{$resultadoHoras['dt_txt'][$key]}}</p>
+                        <img src="{{$resultadoHoras['iconos'][$key]}}">
+                      <p class="lluvia">{{mb_convert_case($name,MB_CASE_TITLE)}}</p>
+                        <p class="temp">{{round($resultadoHoras['temp'][$key])}}</p>
                     </div>
-                    <div class="info-minibox">
-                        <p class="h5">Ahora</p>
-                        <i class="fa-solid fa-snowflake icon"></i>
-                        <p class="lluvia">Nieve</p>
-                        <p>-3</p>
-                    </div>
-                    <div class="info-minibox">
-                        <p class="h5">Ahora</p>
-                        <i class="fa-solid fa-snowflake icon"></i>
-                        <p class="lluvia">Nieve</p>
-                        <p>-3</p>
-                    </div>
-                    <div class="info-minibox2">
-                        <p class="h5">Ahora</p>
-                        <i class="fa-solid fa-snowflake icon"></i>
-                        <p class="lluvia">Nieve</p>
-                        <p class="temp">-3</p>
-                    </div>
+                        @endforeach
+
                     </div>
 
 
                 </div>
                 <div class="dias">
-                    <div class="info-header">Próximas horas</div>
-                    <div class="owl-carousel owl-theme">
-                        <div class="item info-minibox ">
-                            <p class="h5">Ahora</p>
-                            <i class="fa-solid fa-snowflake icon"></i>
-                            <p class="lluvia">Nieve</p>
-                            <p class="temp">-3</p>
+                    <div class="info-header">Próximos dias</div>
+                    <div class="owl-carousel owl-theme ">
+                        <div>
+                            <p class="h5">Miércoles</p>
+                            <img src="http://openweathermap.org/img/wn/11d.png">
+                            <p class="lluvia">Tormenta</p>
+                            <p class="temp">11º</p>
+
                         </div>
-                        <div class="item info-minibox">
-                            <p class="h5">Ahora</p>
-                            <i class="fa-solid fa-snowflake icon"></i>
-                            <p class="lluvia">Nieve</p>
-                            <p class="temp">-3</p>
+                        <div>
+                            <p class="h5">Miércoles</p>
+                            <img src="http://openweathermap.org/img/wn/11d.png">
+                            <p class="lluvia">Tormenta</p>
+                            <p class="temp">11º</p>
+
                         </div>
-                        <div class="item info-minibox">
-                            <p class="h5">Ahora</p>
-                            <i class="fa-solid fa-snowflake icon"></i>
-                            <p class="lluvia">Nieve</p>
-                            <p class="temp">-3</p>
+                        <div>
+                            <p class="h5">Miércoles</p>
+                            <img src="http://openweathermap.org/img/wn/11d.png">
+                            <p class="lluvia">Tormenta</p>
+                            <p class="temp">11º</p>
+
                         </div>
-                        <div class="item info-minibox">
-                            <p class="h5">Ahora</p>
-                            <i class="fa-solid fa-snowflake icon"></i>
-                            <p class="lluvia">Nieve</p>
-                            <p class="temp">-3</p>
+                        <div>
+                            <p class="h5">Miércoles</p>
+                            <img src="http://openweathermap.org/img/wn/11d.png">
+                            <p class="lluvia">Tormenta</p>
+                            <p class="temp">11º</p>
+
                         </div>
-                        <div class="item info-minibox">
-                            <p class="h5">Ahora</p>
-                            <i class="fa-solid fa-snowflake icon"></i>
-                            <p class="lluvia">Nieve</p>
-                            <p class="temp">-3</p>
+                        <div>
+                            <p class="h5">Miércoles</p>
+                            <img src="http://openweathermap.org/img/wn/11d.png">
+                            <p class="lluvia">Tormenta</p>
+                            <p class="temp">11º</p>
+
                         </div>
+
+
                     </div>
                 </div>
+
+
+
+
             </div>
 
 
@@ -127,116 +129,30 @@
             <div class="top-header">
                 <h5>Top 5 de las zonas más frías según tus búsquedas</h5>
             </div>
+            @php($cont=0)
+            @foreach($top5['temp'] as $key=>$temp)
+                @php($cont++)
+                <div class="top-minibox">
+                    <p class="number">1.</p>
+                    <p class="top-temp">{{$temp}}</p>
+                    <div class="top-infobox">
+                        <div class="cp">
+                            <p class="cp-tittle">CP: </p>
+                            <p class="cp-info">{{$top5['cp'][$key]}}</p>
+                        </div>
+                        <div class="ciudad">
+                            <p class="cd-tittle">Ciudad: </p>
+                            <p class="cd-info">{{$top5['nombre'][$key]}}</p>
+                        </div>
 
-            <div class="top-minibox">
-                <p class="number">1.</p>
-                <p class="top-temp">-3º</p>
-                <div class="top-infobox">
-                    <div class="cp">
-                        <p class="cp-tittle">CP: </p>
-                        <p class="cp-info">08034</p>
+
+
                     </div>
-                    <div class="ciudad">
-                        <p class="cd-tittle">Ciudad: </p>
-                        <p class="cd-info">Barcelona</p>
-                    </div>
-
-
-
                 </div>
-
-
-
-
-            </div>
-            <hr>
-            <div class="top-minibox">
-                <p class="number">1.</p>
-                <p class="top-temp">-3º</p>
-                <div class="top-infobox">
-                    <div class="cp">
-                        <p class="cp-tittle">CP: </p>
-                        <p class="cp-info">08034</p>
-                    </div>
-                    <div class="ciudad">
-                        <p class="cd-tittle">Ciudad: </p>
-                        <p class="cd-info">Barcelona</p>
-                    </div>
-
-
-
-                </div>
-
-
-
-
-            </div>
-            <hr> <div class="top-minibox">
-                <p class="number">1.</p>
-                <p class="top-temp">-3º</p>
-                <div class="top-infobox">
-                    <div class="cp">
-                        <p class="cp-tittle">CP: </p>
-                        <p class="cp-info">08034</p>
-                    </div>
-                    <div class="ciudad">
-                        <p class="cd-tittle">Ciudad: </p>
-                        <p class="cd-info">Barcelona</p>
-                    </div>
-
-
-
-                </div>
-
-
-
-
-            </div>
-            <hr>
-            <div class="top-minibox">
-                <p class="number">1.</p>
-                <p class="top-temp">-3º</p>
-                <div class="top-infobox">
-                    <div class="cp">
-                        <p class="cp-tittle">CP: </p>
-                        <p class="cp-info">08034</p>
-                    </div>
-                    <div class="ciudad">
-                        <p class="cd-tittle">Ciudad: </p>
-                        <p class="cd-info">Barcelona</p>
-                    </div>
-
-
-
-                </div>
-
-
-
-
-            </div>
-            <hr>
-            <div class="top-minibox">
-                <p class="number">1.</p>
-                <p class="top-temp">-3º</p>
-                <div class="top-infobox">
-                    <div class="cp">
-                        <p class="cp-tittle">CP: </p>
-                        <p class="cp-info">08034</p>
-                    </div>
-                    <div class="ciudad">
-                        <p class="cd-tittle">Ciudad: </p>
-                        <p class="cd-info">Barcelona</p>
-                    </div>
-
-
-
-                </div>
-
-
-
-
-            </div>
-            <hr>
+            @if($cont!==5)
+                <hr>
+                @endif
+            @endforeach
 
         </div>
     </div>

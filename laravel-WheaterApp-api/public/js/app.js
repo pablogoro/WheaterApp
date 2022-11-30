@@ -1,17 +1,20 @@
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:4
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:false,
+        margin:10,
+        dots:false,
+        responsive:{
+            0:{
+                items:4
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:4
+            }
         }
-    }
-})
+    })
+});
+
+

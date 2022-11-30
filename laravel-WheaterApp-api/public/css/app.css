@@ -33,8 +33,7 @@
 /*VISTA HOME*/
 
 img{
-    margin-top: 2%;
-    width: 30%;
+    width: 25%;
 
 }
 .frase{
@@ -47,6 +46,10 @@ p{
     text-align: center;
     color: #FFFFFF;
     font-family: 'Mulish', sans-serif;
+}
+.owl-carousel{
+    height: 20vh;
+    width: 100%;
 }
 
 .inputs input{
@@ -158,7 +161,7 @@ p{
 
 .box2{
     margin-left: 2%;
-    width: 25%;
+    width: 28%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,19 +172,59 @@ p{
 .direction-row{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    padding: 0 !important;
 }
 .header{
 
 }
-.header div{
+.info-ciudad{
+    padding-left: 20%;
     width: 50%;
     display: flex;
     justify-content:center ;
+    flex-direction: column;
+}
+.info-ciudad div{
+    padding:0;
+}
+.info-ciudad div p{
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.info-ciudad div h5{
+    color: #e1dede;
+    font-weight: unset;
+    padding-right: 3%;
+}
+.codigo-postal, .nombre-ciudad{
+    display: flex;
+    flex-direction: row;
+}
+.buscar{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.buscar i{
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    padding-right: 3%;
+
+}
+.buscar a{
+    width: 31%;
+    font-size: 0.8rem;
+    color: #cacaca;
+    text-decoration: underline;
 }
 
-
 .ahora{
-    width: 23%;
+    width: 27%;
     height: 20vh;
     border-right: #FFFFFF 1px solid;
 }
@@ -190,7 +233,11 @@ p{
 
 
 }
-
+.owl-carousel{
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+}
 .info-box{
     display: flex;
     color: #FFFFFF;
@@ -207,21 +254,15 @@ p{
     top: -15%;
     display: flex;
    flex-direction: row;
+
+}
+.owl-stage{
+    width: 200% !important;
 }
 
-.info-minibox2{
-    height: 15vh;
 
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    font-family: 'Mulish', sans-serif;
-    color: #FFFFFF;
-    width: 25%;
-}
 .prox{
-    width: 40%;
+    width: 45%;
     border-right: #FFFFFF 1px solid;
 }
 
@@ -235,45 +276,109 @@ p{
     position: relative;
     top: -15%;
 }
-.info-minibox{
-    height: 14vh;
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+    font-family: 'fontAwesome';
 
+}
+
+.info-minibox{
+    height: 16vh;
     display: flex;
     flex-direction: column;
-
+    wrap-option: no;
     align-items: center;
     font-family: 'Mulish', sans-serif;
     color: #FFFFFF;
-    border-right: #b3b3b3 1px solid;
+    border-right: #b3b3b3 1px solid ;
+    width: 30%;
+}
+.owl-carousel{
+    height: 30vh;
+}
+.owl-item{
+    cursor: grab;
+    height: 16vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    wrap-option: no !important;
+    align-items: center !important;
+    font-family: 'Mulish', sans-serif !important;
+    color: #FFFFFF !important;
+    border-right: #b3b3b3 1px solid !important;
+
+
+}
+
+.info-minibox:last-child{
+    border-right: 0px;
+
+}
+.info-minibox img{
+    width: 100%;
+
+}
+
+.item{
+    width: 50% !important;
+}
+.info-minibox2{
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    wrap-option: no;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    color: #FFFFFF;
+    border-right: #b3b3b3 1px solid ;
     width: 25%;
+}
+.info-minibox2:last-child{
+    border-right: 0px;
 }
 .icon-box img{
     color: #FFFFFF;
-    height:1em;
-    width: 1em;
+    height:1.25em;
+    width: 1.25em;
 }
 
 .h5{
-    font-size: 0.85rem;
-    padding-bottom: 40%;
+    font-size: 0.75rem;
+
 }
 
 .lluvia{
-    font-size: 0.65rem;
-    padding-top: 30%;
+    font-size: 0.70rem;
+
+}
+.lluvia-box p{
+    font-size: 1rem;
 }
 .temp{
-
+    position: absolute;
+    top: 100%;
 }
 
 .dias{
-    width: 40%;
+    width: 45%;
+
+}
+.item{
+    padding:  0 !important;
+
+}
+.owl-carousel{
+    overflow: hidden;
+    position: relative;
+    top: -20%;
 }
 
 
 .top-minibox{
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     width: 100%;
 }
 .cp, .ciudad{
@@ -295,11 +400,106 @@ p{
     font-size: 0.85rem;
     font-weight: bold;
 }
+
+.top-header{
+    font-size: 1.3rem;
+    font-weight:unset;
+    font-family: 'Mulish', sans-serif;
+    color: #FFFFFF;
+}
 hr{
     width: 100%;
 }
 div{
     padding: 2%;
+}
+.buscar-responsive{
+    display: none;
+}
+@media (max-device-width: 1000px){
+    .boxes{
+        flex-direction: column;
+
+    }
+
+    .background{
+        height: 150vh;
+    }
+
+    .box1{
+        height: 100vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .box2{
+        margin-top: 10%;
+        height: 100vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+       margin-left: 4%;
+    }
+    .info{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ahora,.prox,.dias{
+        width: 100%;
+        border-right: 0;
+    }
+    .ahora{
+        position: relative;
+    }
+    .ahora:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        display: block;
+        clear: both;
+        margin-top: 15%;
+        background-color: #ffffff;
+    }
+    .owl-item{
+        width: 12% !important;
+    }
+
+    .prox{
+        padding-bottom: 75%;
+        position: relative;
+    }
+    .prox:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        display: block;
+        clear: both;
+        margin-top: 15%;
+        background-color: #ffffff;
+    }
+    .info-ciudad{
+        padding: 0;
+    }
+    .buscar a{
+        display: none;
+    }
+    .buscar-responsive {
+
+        display: block;
+
+    }
+    .buscar-responsive a{
+        color: #FFFFFF;
+        font-size: 1.3rem;
+        padding-right: 3%;
+        text-decoration: none;
+    }
 }
 
 
