@@ -133,8 +133,8 @@
             @foreach($top5['temp'] as $key=>$temp)
                 @php($cont++)
                 <div class="top-minibox">
-                    <p class="number">1.</p>
-                    <p class="top-temp">{{$temp}}</p>
+                    <p class="number">{{$cont}}</p>
+                    <p class="top-temp">{{$temp}}º</p>
                     <div class="top-infobox">
                         <div class="cp">
                             <p class="cp-tittle">CP: </p>
